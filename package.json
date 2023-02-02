@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "elm-land build"
+    "prebuild": "elm-frontmatter --elm-dir='./src' -y",
+    "build": "elm-land build",
+    "predev": "npm run prebuild",
+    "dev": "elm-land server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "elm-land": "^0.18.1"
+    "elm-frontmatter": "^2.1.2",
+    "elm-land": "^0.18.1",
+    "elm-tooling": "^1.12.0"
   }
 }

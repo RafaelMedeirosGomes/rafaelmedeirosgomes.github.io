@@ -3,5 +3,6 @@
 /.env
 /elm-stuff
 /node_modules
+/src/Content
 .DS_Store
 *.pem
