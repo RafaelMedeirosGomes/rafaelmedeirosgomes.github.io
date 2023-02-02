@@ -1,35 +1,23 @@
 module Pages.Home_ exposing (page)
 
+import Content.Posts
 import Html exposing (Html)
-import Html.Attributes exposing (class)
-import Markdown
+import Html.Attributes exposing (href)
 import View exposing (View)
 
 
 page : View msg
 page =
     { title = "Homepage"
-    , body = [ content ]
+    , body = content
     }
 
 
-content : Html msg
+content : List (Html msg)
 content =
-    Markdown.toHtmlWith options [ class "content" ] """
-
-# Todo list
-
-  1. [x] Test markdown to HTML lib
-  2. [ ] Add dynamic route for articles
-  3. [ ] Add elm-frontmatter
-  4. [ ] Add articles as .md files
-
-"""
+    List.map viewLink Content.Posts.content.allPosts
 
 
-options =
-    { githubFlavored = Just { tables = True, breaks = True }
-    , defaultHighlighting = Nothing
-    , sanitize = True
-    , smartypants = False
-    }
+viewLink : Content.Posts.CollectionItem -> Html msg
+viewLink post =
+    Html.a [ href ("/posts/" ++ post.id) ] [ Html.text post.title ]
