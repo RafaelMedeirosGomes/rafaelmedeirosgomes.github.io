@@ -10,8 +10,7 @@ decoder typePath =
         -- Will match `content/posts.md`
         Type.Single [ "Content", "Posts" ] ->
             Decode.frontmatter Decode.string
-                [ Decode.attribute "title" Decode.string
-                , Decode.attribute "allPosts" (Decode.list (Decode.reference (Type.Collection [ "Content", "Posts" ])))
+                [ Decode.attribute "allPosts" (Decode.list (Decode.reference (Type.Collection [ "Content", "Posts" ])))
                 ]
 
         -- Will match `content/posts/[first-post].md`, `content/posts/[second-post].md`, etc
