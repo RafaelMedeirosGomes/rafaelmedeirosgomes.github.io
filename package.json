@@ -1,20 +1,23 @@
 {
   "name": "elm-pages",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "prebuild": "elm-frontmatter --elm-dir='./src' -y",
     "build": "elm-land build",
     "predev": "npm run prebuild",
-    "dev": "elm-land server"
+    "dev": "elm-land server",
+    "articles:add": "node ./createPost.cjs",
+    "postarticles:add": "npm run articles:sync",
+    "articles:sync": "node ./updatePostsMetadata.cjs",
+    "prepare": "husky install"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafael Medeiros Gomes",
   "license": "ISC",
   "devDependencies": {
     "elm-frontmatter": "^2.1.2",
     "elm-land": "^0.18.1",
-    "elm-tooling": "^1.12.0"
+    "elm-tooling": "^1.12.0",
+    "husky": "^8.0.0"
   }
 }
