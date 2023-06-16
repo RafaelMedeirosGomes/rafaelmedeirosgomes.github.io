@@ -19,16 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 domain: rafaelmedeirosgomes.github.io
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://rafaelmedeirosgomes.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: Your awesome title
-email: your-email@example.com
+title: Programming is Hard
+email: devmedeiros@pm.me
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: jekyllrb
-github_username:  jekyll
+  This is my personal blog about my programming adventures,
+  in this blog I share my ideas, projects, challenges and opinions based on my experiences.
+github_username:  RafaelMedeirosGomes
 
 # Build settings
 theme: minima
