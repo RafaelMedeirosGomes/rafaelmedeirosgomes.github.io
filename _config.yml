@@ -21,7 +21,11 @@
 domain: rafaelmedeirosgomes.github.io
 url: "https://rafaelmedeirosgomes.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+
 title: Programming is Hard
+description: A blog filled with rants and mistakes, but hopefully with a few good ideas mixed in.
+author: Rafael Medeiros Gomes
+
 email: devmedeiros@pm.me
 github_username:  RafaelMedeirosGomes
 
