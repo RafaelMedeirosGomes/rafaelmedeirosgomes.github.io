@@ -26,9 +26,9 @@ email: devmedeiros@pm.me
 github_username:  RafaelMedeirosGomes
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
