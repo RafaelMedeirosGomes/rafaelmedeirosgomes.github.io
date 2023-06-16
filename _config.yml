@@ -23,9 +23,6 @@ url: "https://rafaelmedeirosgomes.github.io/" # the base hostname & protocol for
 baseurl: "" # the subpath of your site, e.g. /blog
 title: Programming is Hard
 email: devmedeiros@pm.me
-description: >- # this means to ignore newlines until "baseurl:"
-  This is my personal blog about my programming adventures,
-  in this blog I share my ideas, projects, challenges and opinions based on my experiences.
 github_username:  RafaelMedeirosGomes
 
 # Build settings
